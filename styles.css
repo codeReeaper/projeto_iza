@@ -7,19 +7,41 @@ body {
 
 /* Estilos para o cabeçalho */
 header {
+    position: relative;
     background-image: url(https://static.wixstatic.com/media/c28f07_010e4d6227fa4c6ea0393b8495f969b3~mv2.jpg/v1/fill/w_740,h_370,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.lcxdesign.com.br%2Fsolucoes%2F&psig=AOvVaw29KFXvCzs0tPmKqxNd207Y&ust=1710705032121000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNDL3JLH-YQDFQAAAAAdAAAAABAl~mv2.jpg://static.wixstatic.com/media/c28f07_f92ab8d88dd040d8a82fadd8c46d4c73~mv2.jpg/v1/fill/w_740,h_384,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/c28f07_f92ab8d88dd040d8a82fadd8c46d4c73~mv2.jpg);
     background-size: cover;
     background-position: center;
-    color: #226d23; /* Texto branco */
     padding: 20px;
     text-align: center;
-    
+}
+/* Overlay escuro */
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);    
+}
+header h1 {
+    color: #9dff00;
 }
 
 /* Estilos para as seções */
 section {
     padding: 20px;
 }
+
+/* Estilo da imagem abaixo do sobre*/
+.section-background {
+    background-image: url(//s2.glbimg.com/k0na1msjPxcFk2irw56MUxPYxLY=/620x350/e.glbimg.com/og/ed/f/original/2019/05/15/casa2.jpg);
+    background-size: 100% auto;
+    background-position: center;
+    padding: 28% 0;
+    height: auto;
+}
+
 
 /* Estilos para o formulário */
 form {
@@ -52,12 +74,10 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049; /* Verde esmeralda mais escuro */
-}
+button:hover {background-color: #45a049;}
 
 footer {
-    text-align: center;
+    text-align: center; 
     background-color: #ccc;
     padding: 10px;
 }
