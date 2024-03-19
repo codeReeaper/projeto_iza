@@ -24,13 +24,22 @@
         <section id="contact">
             <h2>Contate-nos</h2>
             <p>Preencha o formulário abaixo e entraremos em contato com você em breve:</p>
-            <form action="submit_form.php" method="post">
+            <form action="mailto:vermelinhobolado@gmail.com" method="post" enctype="text/plain">
                 <label for="name">Nome:</label>
                 <input type="text" placeholder="Seu nome completo" id="name" name="name" required>
+                <label for="whatsapp">Telefone principal:</label>
+                <input type="text" placeholder="Whatsapp" id="number" name="number" required>
                 <label for="email">Email:</label>
                 <input type="email" placeholder="Seu melhor email" id="email" name="email" required>
+                <label for="endereco">Endereço do imóvel:</label>
+                <input type="text" placeholder="Endereço" id="endereco" name="endereco" required>
+                
+                
                 <label for="message">Mensagem:</label>
                 <textarea id="message" placeholder="Conte-nos sobre a sua ideia, quanto mais detalhado melhor!" name="message" required></textarea>
+                
+                <p class="importante">Atenção, ao clicar em enviar,<br/>você será direcionado ao seu e-mail</p>
+                <p class="alerta">*Não precisa se preocupar,<br/> nossa aequipe de segurança está cuidando de você,<br/>todos os dados estão pretegidos!*</p>
                 <button type="submit">Enviar</button>
             </form>
         </section>
